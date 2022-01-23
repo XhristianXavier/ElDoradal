@@ -1,0 +1,50 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'globals.scss';
+@import '_header';
+@import '_banner';
+@import '_footer'; 
+ 
+
+.banner{
+    background-image:url(../../images/background_reservation.jpg);
+}
+
+
+.reservation{
+    padding:6rem 0 8rem 0;
+    &__wrapper{
+        @include tablet{
+            width:50%;
+        }
+    }
+}
+
+.card-reservation{
+    padding:4rem 0; 
+    background-color:lighten($lightgray,25%);
+    text-align:center;
+    &__grid{
+        display:flex;
+        justify-content:center;
+        gap:2rem;
+        flex-wrap:wrap;
+        padding:3rem 8rem;
+    }
+    &__item-flex{
+        flex: 1 0 100%;
+    }
+}
+
+.combo-reservation{
+  flex: 0 0 200px;
+  padding:1.5rem 1.2rem 1.5rem .5rem;
+  font-weight:600;
+  font-size:1.5rem;
+}
+
+.button-reservation{
+        @include button($black,$white,$white);
+        border-radius:0;
+        width:200px;
+}  

@@ -1,0 +1,57 @@
+ //Estilos para el pie de pagina
+
+ .footer{
+     padding:4rem 0;
+     background-color:darken($gray,35%);
+     color:$white;
+     &__title{
+         margin-bottom:3rem;
+     }
+ }
+
+ .locations-footer{
+    &__grid{
+         @include grid(1,4rem);
+         @include tablet{
+            @include grid(4,6rem);
+         }
+    }
+ } 
+
+ .location-footer{
+    &__title{
+        margin-bottom:3rem;
+    }
+    &__direction,&__phone,&__week,&__schedule{
+        margin-bottom:1.5rem;
+    }
+    &__social-media{
+        display:flex;
+        align-items:center;
+        gap:2rem;
+        margin-bottom:3rem;
+    } 
+    &__made{
+        font-style:italic;
+        font-size:1.3rem;
+    }
+ }
+
+
+ .footer-social-media{
+    color: $white;
+    border: .25rem solid $white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover{
+        color:darken($white,20%);
+        border: .25rem solid darken($white,20%);
+    }
+}

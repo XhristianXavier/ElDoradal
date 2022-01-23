@@ -1,0 +1,110 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'globals.scss';
+@import '_header';
+@import '_banner';
+@import '_footer'; 
+ 
+
+.banner{
+    background-image:url(../../images/background_banner_menu.jpg);
+}
+
+//Estilos para la seccion de menu
+
+.menu{
+    padding:8rem 0;
+}
+
+.appetizers{
+    margin-bottom:8rem;
+    &__title{
+        text-align:center;
+        margin-bottom:4rem;
+    }
+    &__grid{
+        @include grid(1,3rem);
+        @include tablet{
+            @include grid(2,6rem);
+            row-gap:3rem;
+        }
+    }
+}
+
+.appetizer{
+    display:flex;
+    &__info{
+        flex: 1 0 80%;
+    }
+    &__price{
+        flex: 1 0 20%;
+        text-align:right;
+    }
+    &__name{
+        font-size:1.8rem;
+        font-weight:600;
+    }
+}
+
+
+
+.plates{
+    margin-bottom:8rem;
+    &__title{
+        text-align:center;
+        margin-bottom:4rem;
+    }
+    &__grid{
+        @include grid(1,3rem);
+        @include tablet{
+            @include grid(2,6rem);
+            row-gap:3rem;
+        }
+    }
+}
+
+.plate{
+    display:flex;
+    &__info{
+        flex: 1 0 80%;
+    }
+    &__price{
+        flex: 1 0 20%;
+        text-align:right;
+    }
+    &__name{
+        font-size:1.8rem;
+        font-weight:600;
+    }
+}
+
+
+
+.desserts{
+    &__title{
+        text-align:center;
+        margin-bottom:4rem;
+    }
+    &__grid{
+        @include grid(1,3rem);
+        @include tablet{
+            @include grid(2,6rem);
+            row-gap:3rem;
+        }
+    }
+}
+
+.dessert{
+    display:flex;
+    &__info{
+        flex: 1 0 80%;
+    } 
+    &__price{
+        flex: 1 0 20%;
+        text-align:right;
+    }
+    &__name{
+        font-size:1.8rem;
+        font-weight:600;
+    }
+}

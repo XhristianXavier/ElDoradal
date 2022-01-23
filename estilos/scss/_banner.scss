@@ -1,0 +1,45 @@
+
+ 
+//Estilos para la seccion de banner 
+
+.banner{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:65vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;  
+    color:$white;
+    position:relative;
+    &__wrapper{
+        @include desktop{
+            width:40%;
+        }
+    }
+    &__grid{
+        position:relative;
+    }
+    &::before{
+        display:block;
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color:rgba(0,0,0,0.3); 
+    }
+    &__title{
+        margin-bottom:2rem;
+    }
+    &__description{
+        font-size:1.8rem;
+        font-weight:500; 
+    }
+    &--home{
+        height:100vh;  
+    }
+}    

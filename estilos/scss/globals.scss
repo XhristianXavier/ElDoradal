@@ -1,0 +1,45 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{ 
+    font-size:62.5%;
+}
+
+body{
+    font-family:'sans-serif';
+    position:relative;
+    font-size:1.6rem;
+    line-height:1.8;
+} 
+
+img{
+    display:block;
+    width:100%;
+    object-fit:cover;
+}
+
+[class$="__wrapper"],
+.wrapper{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+    @include tablet{
+        width:70%;
+    }
+} 
+
+
+h2{
+    font-size:4.5rem;
+} 
+
+h3{
+    font-size:3rem;
+}
+
+h4{
+    font-size:2rem;
+}

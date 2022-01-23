@@ -1,0 +1,42 @@
+//Mixins
+
+
+@mixin mobile{
+    @media (min-width:$mobile){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media(min-width:$tablet){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media(min-width:$desktop){
+        @content;
+    }
+}
+
+
+@mixin grid($columns, $spacing){
+    display:grid;
+    gap:$spacing;
+    grid-template-columns:repeat($columns,1fr);
+}
+
+@mixin button($bgcolor,$color,$bcolor){
+    display:inline-block;
+    padding: 1.5rem 3.5rem;
+    background-color:$bgcolor;
+    color:$color;
+    text-align:center;
+    text-decoration:none;
+    border:.25rem solid $bcolor;
+    border-radius:3.5rem;
+    &:hover{
+        background-color:$black;
+        color:$white;
+    }
+} 

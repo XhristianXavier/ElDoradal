@@ -1,0 +1,181 @@
+// Estilos para la cabecera de la pagina
+
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding-top:3.5rem;
+    z-index:$zIndex2;
+    transition: transform 0.4s, background-color 0.4s;
+        &__wrapper{
+            width:90%;
+        }
+        &__grid{ 
+            display:flex; 
+            justify-content:space-between;
+            align-items:center;
+        }
+        &__title{
+            display:inline-block;
+            text-decoration:none;
+            color:$white;
+            font-size:3rem;
+            font-weight:600;
+        }
+        &__nav{
+            display:none;
+            @include desktop{
+                display:block;
+            }
+        }
+    }
+    .container-menu-mobile{
+        visibility:hidden;
+        opacity:0;
+        position:fixed;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color:$white;
+        z-index:$zIndex1;
+        transition: visibility .5s, opacity .3s ease-in;        
+    }
+    .menu-icon{
+        display:inline-block;
+        text-decoration:none;
+        @include desktop{
+            display:none;
+        }
+        &__line{
+            width: 3rem;
+            height: .2rem;
+            margin: 0 0 .75rem 0;
+            background: $white;
+            transition: all 0.5s ease-out;
+        }
+    }
+    .menu-mobile{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style-type:none;
+        display:flex;
+        flex-direction:column;
+        row-gap:2.5rem;
+        font-size:3rem;
+        font-weight:500;
+        text-align:center;
+        &__item{
+            &--social-media{
+                display:flex;
+                gap:2.5rem;
+                justify-content:center;
+                align-items:center;
+            }
+        }
+        &__link{
+            text-decoration:none;
+            color:$black;
+        }
+    }
+    .menu-mobile-social-media{
+        color:$black;
+        &__instagram, &__facebook{
+            font-size:2.5rem;
+        }
+    }
+    .menu-desktop{
+        display:flex;
+        flex-direction:row;
+        list-style-type:none;
+        align-items:center;
+        column-gap:2.5rem;
+        &__item{
+            &:nth-of-type(1){
+                a{
+                 padding-left:0;
+                }
+             }
+             &--social-media{
+                 display:flex;
+                 gap:2.5rem;
+                 align-items:center;
+             }
+        }
+        &__link{
+            color:$white;
+            text-decoration:none;
+            position:relative;
+        }
+    }
+    .menu-desktop-social-media{
+        color:$white;
+        &__instagram, &__facebook{
+            font-size:2rem;
+        }
+    }
+    .underline-link{
+        &::after{
+            position: absolute;
+            content: '';
+            height: .1rem;
+            bottom: -.7rem; 
+            margin: 0 auto;
+              left: 0;
+            right: 0;
+              width: 80%;
+              background:$white;
+              -o-transition:.5s;
+                -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition:.5s;
+        }
+    }
+ 
+    .scroll-down{
+        .header {
+           transform: translateY(-100%); 
+           background-color:$transparent;
+        }
+    }
+
+    .scroll-up{
+        .header {
+            transform: none;
+            background-color:$black;
+            padding:1.5rem 0;
+        }
+      }
+      .show-menu-mobile{
+        overflow:hidden;
+        .container-menu-mobile{
+            visibility:visible;
+            opacity:1;
+        }
+        .menu-icon{
+            transform: rotate(180deg);
+        &__line{
+            background-color:$black;
+            }
+        &__line:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 9px);
+            }
+         
+        &__line:nth-child(2) {
+            opacity: 0;
+            }
+         
+        &__line:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -2px);
+            }
+        }
+        .header{
+            background-color:$white;
+            &__title{
+                color:$black;
+            }
+        } 
+    }
