@@ -418,237 +418,41 @@ h4 {
 }
 
 .banner {
-  background-image: url(../../images/background_banner_home.jpg);
+  background-image: url(../../images/background_news.jpg);
 }
 
-.destination {
-  padding: 8rem 0;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .destination__wrapper {
-    width: 50%;
-  }
-}
-
-.destination__title {
-  margin-bottom: 4rem;
-}
-
-.eat-together {
-  background-image: url(../../images/background__eat-together.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-.eat-together::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.eat-together__wrapper {
-  position: relative;
-}
-
-@media (min-width: 1024px) {
-  .eat-together__wrapper {
-    width: 40%;
-  }
-}
-
-.eat-together__title {
-  margin-bottom: 4rem;
-}
-
-.eat-together__description {
-  margin-bottom: 4rem;
-}
-
-.eat-together__button {
-  display: inline-block;
-  padding: 1.5rem 3.5rem;
-  background-color: transparent;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border: 0.25rem solid #fff;
-  border-radius: 3.5rem;
-}
-
-.eat-together__button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.eat-together__button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.info-restaurant {
+.news {
   padding: 6rem 0;
 }
 
-.info-restaurant__grid {
+.news__grid {
   display: -ms-grid;
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
 }
 
 @media (min-width: 768px) {
-  .info-restaurant__grid {
-    gap: 0;
+  .news__grid {
     display: -ms-grid;
     display: grid;
     gap: 3rem;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.info-restaurant__container-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 4rem;
+.new {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .info-restaurant__container-button {
-    padding-top: 8rem;
+  .new__image {
+    height: 30rem;
   }
 }
 
-.info-restaurant__button {
-  display: inline-block;
-  padding: 1.5rem 3.5rem;
-  background-color: #fff;
+.new-info__link {
   color: #000;
-  text-align: center;
-  text-decoration: none;
-  border: 0.25rem solid #000;
-  border-radius: 3.5rem;
-}
-
-.info-restaurant__button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .card-info__image {
-    height: 15rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .card-info__image {
-    height: 20rem;
-  }
-}
-
-.card-info__title {
-  margin: 2rem 0;
-  text-transform: uppercase;
-}
-
-.kitchen {
-  background-image: url(../../images/background_kitchen.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-.kitchen::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.kitchen__title {
-  position: relative;
-}
-
-.about-chef {
-  padding: 6rem 0;
-}
-
-.about-chef__grid {
-  display: -ms-grid;
-  display: grid;
-  gap: 4rem;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 768px) {
-  .about-chef__grid {
-    gap: 0;
-    display: -ms-grid;
-    display: grid;
-    gap: 3rem;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.about-chef__container-image {
-  padding-top: 4rem;
-}
-
-@media (min-width: 768px) {
-  .about-chef__container-image {
-    padding-top: 8rem;
-  }
-}
-
-.card-chef__role {
-  margin: 2rem 0;
-  font-weight: 600;
 }

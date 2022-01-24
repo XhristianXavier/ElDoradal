@@ -94,7 +94,7 @@
         @include button($white,$black,$black);
     }
 } 
- 
+  
 .card-info{
     &__image{
         @include tablet{

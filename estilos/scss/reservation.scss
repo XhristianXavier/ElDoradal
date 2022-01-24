@@ -10,9 +10,9 @@
     background-image:url(../../images/background_reservation.jpg);
 }
 
-
+//Estilos para la reserva
 .reservation{
-    padding:6rem 0 8rem 0;
+    padding-top:6rem;
     &__wrapper{
         @include tablet{
             width:50%;
@@ -48,3 +48,49 @@
         border-radius:0;
         width:200px;
 }  
+
+
+// Estilos para los eventos
+
+.events{
+    padding-top:8rem;
+    &__grid{
+        @include grid(1,3em);
+        @include tablet{
+            grid-template-columns:repeat(2,1fr);
+            gap:0;
+            column-gap:4rem;
+            row-gap:8rem;
+        }
+    } 
+}
+
+.event{
+    &--image{
+        @include tablet{
+            grid-column: 1 / 3;
+        }
+    }   
+}
+
+.call-number{
+    padding:10rem 0;
+    &__description{
+        font-size:2.5rem;
+        font-weight:600;
+        text-align:center;
+        line-height:1.2;
+        text-transform:uppercase;
+        @include tablet{
+            font-size:3.5rem;
+        }
+    }
+    &__wrapper{
+        @include tablet{
+            width:50%;
+        }
+        @include desktop{
+            width:40%;
+        }
+    }
+} 

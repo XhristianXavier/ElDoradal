@@ -1,0 +1,36 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'globals.scss';
+@import '_header';
+@import '_banner';
+@import '_footer'; 
+
+
+.banner{
+    background-image:url(../../images/background_news.jpg);
+} 
+
+.news{
+    padding:6rem 0;  
+    &__grid{
+        @include grid(1,3rem);
+        @include tablet{
+            @include grid(2,3rem);
+        }
+    }
+}
+
+.new{
+    text-align:center;
+    &__image{
+         @include tablet{
+             height:30rem;
+         }
+    }
+}
+
+.new-info{
+    &__link{
+        color:$black;
+    }
+}
